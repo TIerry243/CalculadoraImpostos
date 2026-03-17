@@ -1,25 +1,27 @@
-# 🧮 Calculadora de Impostos Profissional
+# ⚖️ Calculadora de Impostos (Java)
 
-Este projeto é uma ferramenta robusta para o cálculo de tributação sobre salário bruto, desenvolvida com foco em **precisão financeira** e **tratamento de exceções**.
+Sistema de backend desenvolvido para realizar o cálculo preciso de tributação salarial, focando em **integridade financeira** e boas práticas de programação.
 
-## 🛠️ Tecnologias e Decisões Técnicas
+## 🚀 Diferenciais Técnicos
 
-### 1. Precisão com BigDecimal
-Diferente de tipos primitivos como `float` ou `double`, utilizei a classe **`BigDecimal`**. 
-* **Por quê?** Em cálculos financeiros, o arredondamento binário de tipos de ponto flutuante pode gerar erros de centavos. O `BigDecimal` garante o controle total sobre a escala e o arredondamento.
+Neste projeto, foquei em resolver problemas comuns de sistemas que lidam com dinheiro:
 
-### 2. Resiliência com Try-Catch
-O sistema implementa um bloco de tratamento de erros para lidar com entradas inválidas do usuário.
-* **Fluxo:** Se o usuário digitar um texto onde se espera um número, o sistema captura a `Exception`, exibe uma mensagem amigável e utiliza o comando `continue` para não interromper a execução do loop.
+* **Uso de `BigDecimal`:** Ao contrário de `double` ou `float`, utilizei `BigDecimal` para evitar erros de arredondamento em cálculos monetários, garantindo precisão em cada centavo.
+* **Tratamento de Exceções:** O sistema está preparado para lidar com entradas inválidas, garantindo que o programa não quebre inesperadamente.
+* **Lógica de Negócio:** Implementação das faixas de cálculo baseadas em regras de tributação reais.
 
-### 3. Persistência de Dados (CSV)
-Os cálculos realizados são exportados para um arquivo `.csv`, permitindo auditoria posterior dos dados processados.
+## 🛠️ Tecnologias Utilizadas
+* **Java** (Versão 17+)
+* **Lógica Orientada a Objetos**
+* **Git/GitHub** para versionamento
 
 ---
-## 🚀 Como Executar
 
-1. Certifique-se de ter o **JDK 17+** instalado.
-2. Compile o arquivo:
-   `javac CalculadorImposto.java`
-3. Execute a aplicação:
-   `java CalculadorImposto`
+### 📖 Como rodar o projeto
+1. Clone o repositório: 
+   `git clone https://github.com/TIerry243/CalculadoraImpostos.git`
+2. Entre na pasta `src`.
+3. Compile e execute o arquivo `CalculadorImposto.java`.
+
+---
+💡 *Este é um projeto focado puramente em lógica de backend, priorizando a robustez do código e a precisão dos dados sobre a interface visual.*
